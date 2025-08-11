@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML5 content demonstration with lists, tables, media, and an advanced form using native HTML5 validation.">
+    <meta name="author" content="Your Name">
+    <title>HTML5 Enhanced Content & Forms</title>
+</head>
+<body>
+    <header>
+        <h1>HTML5 Enhanced Content & Mastering Forms</h1>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="#content">Content Examples</a></li>
+                <li><a href="#form">User Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="content">
+            <h2>Organizing Content</h2>
+
+            <article>
+                <h3>HTML5 Learning Topics</h3>
+                <ul>
+                    <li>Semantic HTML5 elements</li>
+                    <li>Accessibility best practices</li>
+                    <li>SEO optimization basics</li>
+                    <li>HTML5 form validation</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>HTML5 Tags Overview</h3>
+                <table border="1" cellpadding="5">
+                    <thead>
+                        <tr>
+                            <th>Tag</th>
+                            <th>Purpose</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&lt;header&gt;</td>
+                            <td>Defines page or section header</td>
+                            <td>&lt;header&gt;...&lt;/header&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;section&gt;</td>
+                            <td>Groups related content</td>
+                            <td>&lt;section&gt;...&lt;/section&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;footer&gt;</td>
+                            <td>Defines footer content</td>
+                            <td>&lt;footer&gt;...&lt;/footer&gt;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <article>
+                <h3>Sample Media</h3>
+                <figure>
+                    <img src="https://via.placeholder.com/300x200" alt="Sample placeholder image">
+                    <figcaption>An example image embedded using HTML5 semantic elements.</figcaption>
+                </figure>
+                <audio controls>
+                    <source src="sample-audio.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <video controls width="320">
+                    <source src="sample-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </article>
+        </section>
+
+        <section id="form">
+            <h2>HTML5 User Registration Form</h2>
+            <form action="#" method="post" autocomplete="on">
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3"><br><br>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="example@email.com" required><br><br>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Account Details</legend>
+
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Choose a username" required minlength="4"><br><br>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Min 8 characters" required minlength="8"><br><br>
+
+                    <label for="confirm_password">Confirm Password:</label>
+                    <input type="password" id="confirm_password" name="confirm_password" required minlength="8"><br><br>
+
+                    <label for="country">Country:</label>
+                    <select id="country" name="country" required>
+                        <option value="">--Select--</option>
+                        <option value="us">United States</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="ca">Canada</option>
+                        <option value="au">Australia</option>
+                    </select><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences</legend>
+                    <p>Subscribe to newsletter?</p>
+                    <label><input type="radio" name="newsletter" value="yes" required> Yes</label>
+                    <label><input type="radio" name="newsletter" value="no"> No</label><br><br>
+
+                    <label for="comments">Additional Comments:</label><br>
+                    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Your message here..."></textarea>
+                </fieldset>
+
+                <br>
+                <input type="submit" value="Register">
+                <input type="reset" value="Clear">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 HTML5 Assignment. All rights reserved.</p>
+    </footer>
+</body>
+</html>
